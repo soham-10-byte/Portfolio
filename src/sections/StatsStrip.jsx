@@ -82,7 +82,7 @@ export default function StatsStrip() {
           <motion.div
             key={i}
             variants={prefersReduced ? {} : itemVariants}
-            className="relative flex flex-col sm:items-center text-left sm:text-center border-b sm:border-b-0 sm:border-r border-c600/25 pb-8 sm:pb-0 sm:px-6 last:border-0"
+            className="relative flex flex-col items-center text-center border-b sm:border-b-0 sm:border-r border-c600/25 pb-8 sm:pb-0 sm:px-6 last:border-0"
           >
             {/* Giant number */}
             <p
@@ -103,7 +103,7 @@ export default function StatsStrip() {
             </p>
 
             {/* Detail copy */}
-            <p className="text-sm text-c100/70 font-body leading-relaxed max-w-[220px] sm:max-w-none">
+            <p className="text-sm text-c100/70 font-body leading-relaxed max-w-[260px] sm:max-w-none mx-auto sm:mx-0">
               {stat.detail}
             </p>
           </motion.div>

@@ -208,9 +208,9 @@ export default function MarketingDetail() {
 
         <div className="relative z-10 max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8">
           {/* ── 1. Header ──────────────────────────────────────────────────── */}
-          <header className="mb-14">
+          <header className="mb-14 flex flex-col items-center md:items-start text-center md:text-left">
             {/* Back link */}
-            <div className="mb-8">
+            <div className="mb-8 w-full flex justify-center md:justify-start">
               <Link
                 to="/marketing"
                 className="inline-flex items-center gap-2 text-xs font-body font-bold uppercase tracking-tracked text-c400 hover:text-c100 transition-colors min-h-[36px]"
@@ -221,7 +221,7 @@ export default function MarketingDetail() {
             </div>
 
             {/* Top row: Industry PillTag + Brand Title */}
-            <div className="flex flex-wrap items-center gap-3 mb-4">
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 mb-4">
               <PillTag active>{caseItem.industry}</PillTag>
               {caseItem.featured && (
                 <span className="px-3 py-1 rounded-pill bg-c100 text-c900 text-xs font-body font-black uppercase tracking-wider">
@@ -231,14 +231,14 @@ export default function MarketingDetail() {
             </div>
 
             <h1
-              className="font-display font-black text-c100 uppercase tracking-tightest leading-[0.92] mb-6"
+              className="font-display font-black text-c100 uppercase tracking-tightest leading-[0.92] mb-6 text-center md:text-left"
               style={{ fontSize: 'clamp(2.5rem, 8vw, 5.5rem)' }}
             >
               {caseItem.brand}
             </h1>
 
             {/* Service Pills */}
-            <div className="flex flex-wrap gap-2.5">
+            <div className="flex flex-wrap justify-center md:justify-start gap-2.5">
               {caseItem.services.map((svc) => (
                 <span
                   key={svc}
@@ -262,9 +262,9 @@ export default function MarketingDetail() {
           </header>
 
           {/* ── 2. Giant Result Block ──────────────────────────────────────── */}
-          <div className="p-8 sm:p-14 rounded-[36px] glass-card border border-c400/50 bg-gradient-to-b from-c800/90 to-c900 relative overflow-hidden mb-16 shadow-mint-glow">
+          <div className="p-8 sm:p-14 rounded-[36px] glass-card border border-c400/50 bg-gradient-to-b from-c800/90 to-c900 relative overflow-hidden mb-16 shadow-mint-glow text-center sm:text-left flex flex-col items-center sm:items-start">
             {/* Top right subtle badge */}
-            <div className="flex items-center justify-between mb-4">
+            <div className="flex flex-wrap items-center justify-center sm:justify-between w-full gap-2 mb-4">
               <span className="text-xs font-display font-bold uppercase tracking-tracked text-c400">
                 PROVEN COMMERCIAL RESULT
               </span>
@@ -275,19 +275,19 @@ export default function MarketingDetail() {
 
             {/* Oversized result in the display face */}
             <div
-              className="font-display font-black text-c100 tracking-tight leading-none text-glow my-3"
+              className="font-display font-black text-c100 tracking-tight leading-none text-glow my-3 text-center sm:text-left"
               style={{ fontSize: 'clamp(4rem, 14vw, 12rem)' }}
             >
               <AnimatedHeadlineResult value={caseItem.headlineResult} />
             </div>
 
             {/* Result Label beneath */}
-            <p className="font-display font-bold text-base sm:text-2xl text-c400 uppercase tracking-tracked">
+            <p className="font-display font-bold text-base sm:text-2xl text-c400 uppercase tracking-tracked text-center sm:text-left">
               {caseItem.resultLabel}
             </p>
 
             {/* Summary narrative */}
-            <p className="mt-6 text-sm sm:text-base text-c100/85 font-body leading-relaxed max-w-3xl pt-6 border-t border-c600/30">
+            <p className="mt-6 text-sm sm:text-base text-c100/85 font-body leading-relaxed max-w-3xl pt-6 border-t border-c600/30 text-center sm:text-left">
               {caseItem.summary}
             </p>
           </div>

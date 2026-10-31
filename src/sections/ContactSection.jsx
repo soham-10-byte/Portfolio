@@ -174,7 +174,7 @@ export default function ContactSection() {
       className="py-24 px-4 sm:px-6 lg:px-8 max-w-[1320px] mx-auto border-t border-c600/20"
     >
       {/* Header */}
-      <div className="max-w-4xl mb-16">
+      <div className="max-w-4xl mb-16 flex flex-col items-center lg:items-start text-center lg:text-left mx-auto lg:mx-0">
         <div className="mb-4">
           <PillTag active>GET IN TOUCH</PillTag>
         </div>
@@ -186,7 +186,7 @@ export default function ContactSection() {
           <br />
           <span className="text-c400 text-glow">LET&apos;S TALK.</span>
         </h2>
-        <p className="text-base sm:text-lg text-c100/90 font-body leading-relaxed max-w-2xl">
+        <p className="text-base sm:text-lg text-c100/90 font-body leading-relaxed max-w-2xl mx-auto lg:mx-0">
           Whether you need a scalable MERN stack web app built from scratch or high-converting search and ads campaigns, let&apos;s engineer something impactful.
         </p>
       </div>

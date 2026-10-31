@@ -212,10 +212,10 @@ export default function DevelopmentDetail() {
             initial={{ opacity: 0, y: reducedMotion ? 0 : 28 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: easing }}
-            className="mb-12"
+            className="mb-12 flex flex-col items-center md:items-start text-center md:text-left"
           >
             {/* Back link */}
-            <div className="mb-8">
+            <div className="mb-8 w-full flex justify-center md:justify-start">
               <Link
                 to="/development"
                 className="inline-flex items-center gap-2 text-xs font-body font-bold uppercase tracking-tracked text-c400 hover:text-c100 transition-colors min-h-[44px]"
@@ -226,25 +226,25 @@ export default function DevelopmentDetail() {
             </div>
 
             {/* Year pill + meta */}
-            <div className="flex flex-wrap items-center gap-3 mb-5">
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 mb-5">
               <PillTag active>{project.year}</PillTag>
               <span className="text-xs font-body text-c400 uppercase tracking-wider">{project.category}</span>
             </div>
 
             {/* H1 */}
             <h1
-              className="font-display font-black text-c100 uppercase tracking-tightest leading-[0.92] mb-4"
+              className="font-display font-black text-c100 uppercase tracking-tightest leading-[0.92] mb-4 text-center md:text-left"
               style={{ fontSize: 'clamp(2.25rem, 9vw, 6rem)' }}
             >
               {project.title}
             </h1>
 
-            <p className="text-lg sm:text-xl text-c400 font-body leading-relaxed max-w-2xl mb-8">
+            <p className="text-lg sm:text-xl text-c400 font-body leading-relaxed max-w-2xl mb-8 mx-auto md:mx-0">
               {project.tagline}
             </p>
 
             {/* Meta row: ROLE / YEAR / LIVE / GITHUB */}
-            <div className="flex flex-wrap items-center gap-4 p-5 sm:p-6 rounded-[20px] glass-card border border-c600/40">
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 p-5 sm:p-6 rounded-[20px] glass-card border border-c600/40 w-full">
               <div className="flex flex-col">
                 <span className="text-[10px] font-body uppercase tracking-wider text-c400 mb-0.5">ROLE</span>
                 <span className="text-sm font-body font-semibold text-c100">{project.role}</span>

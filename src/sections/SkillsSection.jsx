@@ -63,8 +63,8 @@ export default function SkillsSection() {
       className="py-24 px-4 sm:px-6 lg:px-8 max-w-[1320px] mx-auto border-t border-c600/20"
     >
       {/* Header */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
-        <div>
+      <div className="flex flex-col md:flex-row md:items-end justify-between items-center md:items-end gap-6 mb-16 text-center md:text-left">
+        <div className="flex flex-col items-center md:items-start">
           <div className="mb-4">
             <PillTag active>TECH STACK &amp; CAPABILITIES</PillTag>
           </div>
@@ -81,7 +81,7 @@ export default function SkillsSection() {
         <a
           href={contact.resumeUrl}
           download
-          className="inline-flex items-center gap-2 px-6 py-3.5 rounded-pill bg-c100 text-c900 font-body font-bold text-xs uppercase tracking-tracked hover:shadow-mint-glow hover:brightness-105 active:scale-[0.98] transition-all min-h-[44px] self-start md:self-end"
+          className="inline-flex items-center gap-2 px-6 py-3.5 rounded-pill bg-c100 text-c900 font-body font-bold text-xs uppercase tracking-tracked hover:shadow-mint-glow hover:brightness-105 active:scale-[0.98] transition-all min-h-[44px] self-center md:self-end"
         >
           <FileText size={15} />
           <span>{cta.resume}</span>

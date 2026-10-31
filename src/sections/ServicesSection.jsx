@@ -51,7 +51,7 @@ export default function ServicesSection() {
       className="py-24 px-4 sm:px-6 lg:px-8 max-w-[1320px] mx-auto border-t border-c600/20"
     >
       {/* Header */}
-      <div className="max-w-4xl mb-16">
+      <div className="max-w-4xl mb-16 flex flex-col items-center md:items-start text-center md:text-left mx-auto md:mx-0">
         <div className="mb-4">
           <PillTag active>SERVICES &amp; EXECUTION</PillTag>
         </div>
@@ -62,7 +62,7 @@ export default function ServicesSection() {
           WHAT I BUILD &amp;{' '}
           <span className="text-c400 text-glow">SCALE</span>
         </h2>
-        <p className="text-base sm:text-lg text-c100/90 font-body leading-relaxed max-w-2xl">
+        <p className="text-base sm:text-lg text-c100/90 font-body leading-relaxed max-w-2xl mx-auto md:mx-0">
           End-to-end technical execution combining production MERN stack software engineering with high-velocity organic search and performance marketing funnels.
         </p>
       </div>
@@ -163,7 +163,7 @@ export default function ServicesSection() {
 
       {/* 4-Step Process: Discover, Plan, Build/Launch, Grow */}
       <div ref={processRef} className="pt-8 border-t border-c600/30">
-        <div className="max-w-2xl mb-10">
+        <div className="max-w-2xl mb-10 flex flex-col items-center md:items-start text-center md:text-left mx-auto md:mx-0">
           <PillTag>METHODOLOGY</PillTag>
           <h3
             className="font-display font-black text-c100 uppercase tracking-tight mt-3 text-2xl sm:text-3xl"

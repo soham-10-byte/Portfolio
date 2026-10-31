@@ -230,7 +230,7 @@ export default function Development() {
 
         <div className="relative z-10 max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
           {/* ── Hero Strip ─────────────────────────────────────── */}
-          <div className="mb-6">
+          <div className="mb-6 flex justify-center md:justify-start">
             <Link
               to="/"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-pill border border-c600/50 bg-c800/80 text-c400 text-xs font-body font-semibold uppercase tracking-tracked hover:text-c100 hover:border-c400 transition-all min-h-[44px]"
@@ -243,6 +243,7 @@ export default function Development() {
             initial={{ opacity: 0, y: 32 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+            className="flex flex-col items-center md:items-start text-center md:text-left"
           >
             <div className="mb-4">
               <PillTag active>THE BUILD SIDE</PillTag>
@@ -258,13 +259,13 @@ export default function Development() {
               <span className="text-c400 text-glow">BUILT ON MERN.</span>
             </h1>
 
-            <p className="text-base sm:text-lg text-c100/85 font-body leading-relaxed max-w-2xl mb-8">
+            <p className="text-base sm:text-lg text-c100/85 font-body leading-relaxed max-w-2xl mb-8 mx-auto md:mx-0">
               Production full-stack applications engineered with React, Node.js, Express, and MongoDB.
               JWT authentication, role-based access control, optimized database queries, and clean REST API design.
             </p>
 
             {/* Core stack pills */}
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap justify-center md:justify-start gap-3">
               {['MongoDB', 'Express.js', 'React.js', 'Node.js'].map((tech) => (
                 <span
                   key={tech}

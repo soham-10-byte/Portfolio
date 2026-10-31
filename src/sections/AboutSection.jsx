@@ -44,7 +44,7 @@ export default function AboutSection() {
       className="py-24 px-4 sm:px-6 lg:px-8 max-w-[1320px] mx-auto border-t border-c600/20 relative"
     >
       {/* Section Header */}
-      <div className="max-w-4xl mb-16">
+      <div className="max-w-4xl mb-16 flex flex-col items-center md:items-start text-center md:text-left mx-auto md:mx-0">
         <div className="mb-4">
           <PillTag active>ABOUT ME</PillTag>
         </div>
@@ -56,7 +56,7 @@ export default function AboutSection() {
           <br />
           <span className="text-c400 text-glow">MARKETER BY INSTINCT.</span>
         </h2>
-        <p className="text-base sm:text-lg text-c100/90 font-body leading-relaxed max-w-2xl">
+        <p className="text-base sm:text-lg text-c100/90 font-body leading-relaxed max-w-2xl mx-auto md:mx-0">
           Building full-stack web applications and scaling them with high-intent organic search and performance ads — engineered end to end by one builder.
         </p>
       </div>

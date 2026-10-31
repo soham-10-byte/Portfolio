@@ -31,7 +31,7 @@ export default function TwoPathSection() {
   return (
     <section id="works" className="relative py-24 sm:py-32 px-4 sm:px-6 lg:px-8 max-w-[1320px] mx-auto z-10">
       {/* Section Header */}
-      <div className="flex flex-col items-start mb-12 sm:mb-16">
+      <div className="flex flex-col items-center md:items-start text-center md:text-left mb-12 sm:mb-16 mx-auto md:mx-0">
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -42,13 +42,13 @@ export default function TwoPathSection() {
           <PillTag active>CHOOSE YOUR PATH</PillTag>
         </motion.div>
 
-        <div className="overflow-hidden">
+        <div className="overflow-hidden w-full flex justify-center md:justify-start">
           <motion.h2
             initial={reducedMotion ? { opacity: 0 } : { y: '100%' }}
             whileInView={reducedMotion ? { opacity: 1 } : { y: 0 }}
             viewport={{ once: true, margin: '-50px' }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="text-h2 font-display font-black text-c100 uppercase tracking-tightest leading-tighter"
+            className="text-h2 font-display font-black text-c100 uppercase tracking-tightest leading-tighter text-center md:text-left"
           >
             TWO SIDES.{' '}
             <span className="text-c400 text-glow block sm:inline">ONE BUILDER.</span>

@@ -17,7 +17,7 @@ export default function SectionHeading({
   const reducedMotion = useReducedMotion();
 
   const alignmentClasses = {
-    left: 'text-left items-start',
+    left: 'text-center md:text-left items-center md:items-start mx-auto md:mx-0',
     center: 'text-center items-center mx-auto',
   };
 

@@ -121,9 +121,9 @@ export default function Marketing() {
 
         <div className="relative z-10 max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
           {/* ── 1. Hero Strip ──────────────────────────────────────────────── */}
-          <div className="max-w-4xl mb-16 sm:mb-20">
+          <div className="max-w-4xl mb-16 sm:mb-20 flex flex-col items-center md:items-start text-center md:text-left mx-auto md:mx-0">
             {/* Top row: Pill tag + Back Link */}
-            <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
+            <div className="flex flex-wrap items-center justify-center md:justify-between gap-4 mb-6 w-full">
               <PillTag active>THE GROWTH SIDE</PillTag>
               <Link
                 to="/"
@@ -144,13 +144,13 @@ export default function Marketing() {
             </h1>
 
             {/* Intro paragraph */}
-            <p className="text-base sm:text-lg text-c100/90 font-body leading-relaxed max-w-2xl mb-10">
+            <p className="text-base sm:text-lg text-c100/90 font-body leading-relaxed max-w-2xl mb-10 mx-auto md:mx-0">
               Commercial growth delivered through data-driven search architecture, high-ROI paid advertising, and viral content velocity. Scaling e-commerce brands and client pipelines with measurable revenue outcomes.
             </p>
 
             {/* 3 Counters Strip */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 pt-8 border-t border-c600/30">
-              <div className="p-5 rounded-[20px] bg-c800/70 border border-c600/40">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 pt-8 border-t border-c600/30 w-full">
+              <div className="p-5 rounded-[20px] bg-c800/70 border border-c600/40 text-center sm:text-left flex flex-col items-center sm:items-start">
                 <p className="font-display font-black text-3xl sm:text-4xl text-c100 text-glow leading-tight mb-1">
                   <AnimatedResult value="₹15L+" duration={2.0} />
                 </p>
@@ -162,7 +162,7 @@ export default function Marketing() {
                 </p>
               </div>
 
-              <div className="p-5 rounded-[20px] bg-c800/70 border border-c600/40">
+              <div className="p-5 rounded-[20px] bg-c800/70 border border-c600/40 text-center sm:text-left flex flex-col items-center sm:items-start">
                 <p className="font-display font-black text-3xl sm:text-4xl text-c100 text-glow leading-tight mb-1">
                   <AnimatedResult value="15+" duration={1.6} />
                 </p>
@@ -174,7 +174,7 @@ export default function Marketing() {
                 </p>
               </div>
 
-              <div className="p-5 rounded-[20px] bg-c800/70 border border-c600/40">
+              <div className="p-5 rounded-[20px] bg-c800/70 border border-c600/40 text-center sm:text-left flex flex-col items-center sm:items-start">
                 <p className="font-display font-black text-3xl sm:text-4xl text-c100 text-glow leading-tight mb-1">
                   <AnimatedResult value="8" duration={1.6} />
                 </p>

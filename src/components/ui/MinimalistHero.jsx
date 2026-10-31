@@ -287,7 +287,7 @@ export default function MinimalistHero({
           initial={reducedMotion ? { opacity: 1 } : { opacity: 0, y: 18 }}
           animate={startAnimations ? { opacity: 1, y: 0 } : { opacity: 0, y: 18 }}
           transition={{ duration: reducedMotion ? 0 : 0.58, delay: reducedMotion ? 0 : 0.08, ease: easeCurve }}
-          className="w-full lg:col-span-4 flex flex-col items-start justify-center order-3 lg:order-1 max-w-xl lg:max-w-none mx-auto lg:mx-0"
+          className="w-full lg:col-span-4 flex flex-col items-center lg:items-start text-center lg:text-left justify-center order-3 lg:order-1 max-w-xl lg:max-w-none mx-auto lg:mx-0"
         >
           {/* Small pill tag */}
           <div style={copyRevealDelay(0)} className={cn('inline-flex items-center gap-2 px-3.5 py-1.5 rounded-pill border border-c600 bg-c800/80 text-c100 text-[11px] tracking-tracked uppercase font-body mb-4 select-none', copyRevealClass)}>
@@ -319,7 +319,7 @@ export default function MinimalistHero({
           </a>
 
           {/* CTAs under the left paragraph */}
-          <div style={copyRevealDelay(270)} className={cn('w-full sm:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-3', copyRevealClass)}>
+          <div style={copyRevealDelay(270)} className={cn('w-full sm:w-auto flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3.5 mb-3', copyRevealClass)}>
             {/* Primary Pill Button */}
             <a
               ref={primaryMagneticRef}
@@ -349,7 +349,7 @@ export default function MinimalistHero({
             href="/Soham-Sen-Resume.pdf"
             download
             style={copyRevealDelay(330)}
-            className={cn('inline-flex items-center gap-1.5 text-xs text-c400 hover:text-c100 transition-colors uppercase tracking-tracked font-body mt-1 ml-1 group', copyRevealClass)}
+            className={cn('inline-flex items-center justify-center lg:justify-start gap-1.5 text-xs text-c400 hover:text-c100 transition-colors uppercase tracking-tracked font-body mt-1 ml-1 group', copyRevealClass)}
           >
             <FileText size={13} className="text-c400 group-hover:text-c100 transition-colors" />
             <span className="underline underline-offset-4 decoration-c400/40 group-hover:decoration-c100">
