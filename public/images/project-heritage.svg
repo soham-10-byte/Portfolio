@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B2B26" />
+      <stop offset="100%" stop-color="#051F20" />
+    </linearGradient>
+    <radialGradient id="beam2" cx="30%" cy="10%" r="70%">
+      <stop offset="0%" stop-color="#DAF1DE" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#051F20" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg2)" />
+  <rect width="800" height="500" fill="url(#beam2)" />
+  <rect x="60" y="60" width="680" height="380" rx="20" fill="#163832" stroke="#235347" stroke-width="2" />
+  <!-- Editorial Grid -->
+  <rect x="90" y="90" width="300" height="320" rx="14" fill="#0B2B26" stroke="#235347" stroke-width="1.5" />
+  <circle cx="240" cy="210" r="60" fill="#235347" stroke="#8EB69B" stroke-width="2" stroke-dasharray="4 4" />
+  <rect x="130" y="310" width="220" height="14" rx="7" fill="#DAF1DE" fill-opacity="0.7" />
+  <rect x="150" y="335" width="180" height="10" rx="5" fill="#8EB69B" fill-opacity="0.5" />
+
+  <rect x="410" y="90" width="300" height="150" rx="14" fill="#0B2B26" stroke="#235347" stroke-width="1.5" />
+  <rect x="430" y="120" width="200" height="16" rx="8" fill="#DAF1DE" fill-opacity="0.8" />
+  <rect x="430" y="150" width="260" height="10" rx="5" fill="#8EB69B" fill-opacity="0.4" />
+  <rect x="430" y="170" width="230" height="10" rx="5" fill="#8EB69B" fill-opacity="0.4" />
+
+  <rect x="410" y="260" width="300" height="150" rx="14" fill="#0B2B26" stroke="#235347" stroke-width="1.5" />
+  <rect x="430" y="290" width="160" height="14" rx="7" fill="#8EB69B" fill-opacity="0.7" />
+  <rect x="430" y="320" width="250" height="10" rx="5" fill="#8EB69B" fill-opacity="0.3" />
+
+  <rect x="230" y="450" width="340" height="26" rx="13" fill="#051F20" stroke="#8EB69B" stroke-opacity="0.4" />
+  <text x="400" y="467" font-family="monospace" font-size="11" fill="#DAF1DE" text-anchor="middle" letter-spacing="2">
+    [PLACEHOLDER: THE CALCUTTA HERITAGE]
+  </text>
+</svg>
+

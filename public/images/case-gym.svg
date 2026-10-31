@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B2B26"/>
+      <stop offset="100%" stop-color="#051F20"/>
+    </linearGradient>
+    <radialGradient id="mintGlow" cx="20%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#DAF1DE" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#051F20" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#mintGlow)"/>
+  
+  <rect x="120" y="100" width="560" height="400" rx="28" fill="#163832" stroke="#235347" stroke-width="2" opacity="0.8"/>
+  <rect x="160" y="140" width="160" height="32" rx="16" fill="#0B2B26" stroke="#8EB69B" stroke-width="1" opacity="0.8"/>
+  <text x="240" y="161" fill="#8EB69B" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle" letter-spacing="2">INFINITY GYM</text>
+
+  <text x="160" y="270" fill="#DAF1DE" font-family="'Unbounded', sans-serif, system-ui" font-size="76" font-weight="900" letter-spacing="-2">₹1L+</text>
+  <text x="160" y="315" fill="#8EB69B" font-family="monospace" font-size="14" font-weight="600" letter-spacing="3">IN A SINGLE MONTH</text>
+
+  <g transform="translate(160, 360)">
+    <rect width="160" height="60" rx="16" fill="#0B2B26" stroke="#235347" stroke-width="1"/>
+    <text x="20" y="26" fill="#8EB69B" font-family="sans-serif" font-size="10" font-weight="bold" letter-spacing="1">CONTENT VIRALITY</text>
+    <text x="20" y="46" fill="#DAF1DE" font-family="sans-serif" font-size="14" font-weight="bold">Community Reels</text>
+  </g>
+
+  <rect x="520" y="420" width="120" height="28" rx="14" fill="#051F20" stroke="#8EB69B" stroke-width="1" opacity="0.6"/>
+  <text x="580" y="438" fill="#8EB69B" font-family="monospace" font-size="10" text-anchor="middle">CONTENT STRATEGY</text>
+</svg>
+
